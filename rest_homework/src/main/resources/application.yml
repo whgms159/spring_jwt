@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: rest_homework
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/homework_db
+    username: root
+    password: 1234
+  jpa:
+    generate-ddl: true
+    show-sql: true
+    open-in-view: false
+  sql:
+    init:
+      mode: never
+  upload:
+    location: C://Users//WD//Desktop//post-image
+jwt:
+  issuer: kosta-th
+  secret_key: mysecretmysecretmysecretmysecret
+  access_duration: 1_800_000 # 30분(30 * 60 * 1000)
+  refresh_duration: 86400000 # 24시간(24 * 1000 * 3600)
